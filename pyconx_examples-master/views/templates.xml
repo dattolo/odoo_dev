@@ -6,10 +6,13 @@
         inherit_id="website_sale.product"
         customize_show="True"
         name="Dummy field">
-
+        
         <xpath expr="//div[@id='product_details']" position="after">
             <t t-if="product.dummy_field">
-                <span class="dummy_field">Dummy Field:</span> <div t-field="product.dummy_field" class="text-muted"/>
+                <div class="col-md-12 col-xl-12">
+                    <span class="dummy_field">Dummy Field:</span>
+                    <div t-field="product.dummy_field" class="text-muted"/>
+                </div>
             </t>
         </xpath>
 

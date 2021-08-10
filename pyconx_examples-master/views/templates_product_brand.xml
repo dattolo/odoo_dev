@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="pyconx_product_brand" inherit_id="website_sale.product" customize_show="True" name="Brand field">
+
+        <xpath expr="//h1[@itemprop='name']" position="before">
+            <t t-if="product.product_brand_id">
+                <div class="">
+                    <div t-field="product.product_brand_id" class="text-muted brand_field"/>
+                </div>
+            </t>
+        </xpath>
+
+    </template>
+
+
+</odoo>

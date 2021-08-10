@@ -10,6 +10,8 @@
     'data': [
         'views/assets.xml',
         'views/product_views.xml',
-        'views/templates.xml'],
+        'views/templates.xml',
+        'views/templates_product_brand.xml',
+        ],
     'installable': True,
 }
