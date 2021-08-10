@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template
+        id="pyconx_product"
+        inherit_id="website_sale.product"
+        customize_show="True"
+        name="Dummy field">
+
+        <xpath expr="//div[@id='product_details']" position="after">
+            <t t-if="product.dummy_field">
+                <span class="dummy_field">Dummy Field:</span> <div t-field="product.dummy_field" class="text-muted"/>
+            </t>
+        </xpath>
+
+    </template>
+
+</odoo>
